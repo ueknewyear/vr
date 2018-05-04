@@ -1,4 +1,4 @@
-﻿{
+{
     "@platforms": ["android", "iPhone", "iPad"],
     "id": "",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "course",/*应用名称，程序桌面图标名称*/
@@ -135,5 +135,68 @@
                 }
             }
         }
-    }
+    },
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [],
+				"refer": [
+					"camera.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"css/mui/icons-extra.css",
+				"js/camera/camara.js",
+				"js/mui/mui.zoom.js",
+				"js/mui/arttmpl.js",
+				"js/mui/mui.picker.js",
+				"css/mui/mui.imageviewer.css",
+				"js/jquery-2.1.0.js",
+				"js/mui/95516.js",
+				"css/mui/mui.picker.all.css",
+				"js/mui/mui.imageViewer.js",
+				"css/mui/mui.picker.min.css",
+				"css/index.css",
+				"fonts/mui-icons-extra.ttf",
+				"js/mui/update.js",
+				"css/mui/mui.picker.css",
+				"js/mui/mui.listpicker.js",
+				"js/mui/mui.indexedlist.js",
+				"js/mui/mui.view.js",
+				"js/mui/mui.locker.js",
+				"js/mui/mui.poppicker.js",
+				"js/mui/city.data.js",
+				"js/mui/webviewGroup.js",
+				"js/mui/mui.previewimage.js",
+				"css/mui/mui.dtpicker.css",
+				"js/mui/mui.pullToRefresh.js",
+				"css/camera/camera.css",
+				"fonts/mui.ttf",
+				"css/mui/mui.indexedlist.css",
+				"js/mui/city.data-3.js",
+				"js/rem.js",
+				"js/mui/mui.pullToRefresh.material.js",
+				"css/mui/app.css",
+				"js/mui/mui.min.js",
+				"css/mui/mui.listpicker.css",
+				"css/mui/mui.poppicker.css",
+				"js/h5/common.js",
+				"js/mui/mui.lazyload.img.js",
+				"js/h5/immersed.js",
+				"css/mui/feedback.css",
+				"js/mui/mui.picker.all.js",
+				"js/mui/mui.picker.min.js",
+				"js/mui/feedback.js",
+				"js/mui/mui.dtpicker.js",
+				"js/mui/mui.lazyload.js",
+				"js/mui/mui.js",
+				"js/h5/shortcut.js",
+				"css/mui/mui.min.css",
+				"js/mui/beecloud.js"
+			]
+		}
+	}
 }

@@ -1,0 +1,66 @@
+body{
+	background: #FFFFFF;
+}
+.header{
+  width: 100%;
+  height: 0.84rem;
+  padding: 0 0.24rem;
+  box-sizing: border-box;
+  background: #1e7df1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header > a{
+	width: 0.6rem;
+	height: 0.6rem;
+	display: block;
+	text-align: center;
+	line-height: 0.66rem;
+	background: #FFFFFF;
+	border-radius: 50%;
+}
+.header >  a > i{
+	font-size: 0.35rem;
+}
+
+div.formGroup{
+	width: 4.33rem;
+	height: 0.6rem;
+	background: #1b6cce;
+	padding: 0.1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+::-webkit-input-placeholder{
+	color: rgba(255,255,255,0.6);
+	font-size: 0.2rem;
+}
+div.formGroup > input{
+	float: left;
+	height: 0.3rem;
+	padding: 0;
+	background: none;
+	border: none;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 0;
+}
+
+/* header  */
+
+.banner{
+	width: 100%;
+	height: 5.7rem;
+	padding: 0.24rem 0.2rem;
+	background: ;
+	
+}
+.banner > .presentCourse {
+	width: 100%;
+	height: 2rem;
+	background: #FFFFFF;
+	padding: 0.18rem;
+}
+
+/* banner */
