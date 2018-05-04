@@ -1,12 +1,3 @@
-p , input , button , ul ,li{
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    border-radius: 0;
-    list-style: none;
-}
-
 
 .courseBox{
     width: 100%;
@@ -19,6 +10,7 @@ p , input , button , ul ,li{
     font-size: 0.3rem;
     color: rgba(0,0,0,0.9);
     position: relative;
+    line-height: 1.5;
 }
 
 .courseBox > h3.title > img{
