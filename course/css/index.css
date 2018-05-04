@@ -1,3 +1,12 @@
+p , input , button , ul ,li{
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	border-radius: 0;
+	list-style: none;
+}
+
 body{
 	background: #FFFFFF;
 }
@@ -51,10 +60,10 @@ div.formGroup > input{
 
 .banner{
 	width: 100%;
-	height: 5.7rem;
+	height: 5.9rem;
 	padding: 0.24rem 0.2rem;
-	background: url(../img/bannerbg.png) center / cover;
-	
+	background: url(../img/index/bannerbg.png) center / cover;
+  	
 }
 .banner > .presentCourse {
 	width: 100%;
@@ -63,4 +72,187 @@ div.formGroup > input{
 	padding: 0.18rem;
 }
 
+.presentCourse > .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.01rem solid #d9fbfc;
+}
+.title >  h3{
+	font-size: 0.3rem;
+	color:rgba(0,0,0,0.9);
+}
+.title > .date{
+	font-size: 0.2rem;
+	color: rgba(0,0,0,0.6);
+}
+
+
+/* courseItem */
+.courseItem{
+	height: 1.35rem;
+}
+.courseItem > a{
+    width: 100%;
+    height: 100%;	
+    display: flex;
+	justify-content: space-between;
+}
+.courseImg{
+	width: 2.18rem;
+	height: 1.23rem;
+}
+.courseImg > img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.courseInfoBox{
+	flex-grow: 1;
+    height: 100%;
+    padding-left: 0.24rem;
+}
+.courseInfoBox h1{
+    color:  #1E7DF1;
+    font-size: 0.28rem;
+    opacity: 0.8;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+.courseInfoBox p{
+    color: rgba(0,0,0,0.6);
+    line-height: 2;
+    font-size: 0.18rem;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+div.tag{
+	display: flex;
+}
+div.tag > button{
+	background: #69dcba;
+	color: #FFFFFF;
+	font-size: 0.2rem;
+	border: 0.01rem solid #4ec470;
+	padding: 0.03rem 0.12rem;
+}
+
+.bannerBox{
+	margin-top: 0.1rem;
+}
 /* banner */
+
+.courseBox{
+	width: 100%;
+	height: auto;
+	padding: 0.24rem;
+}
+.courseBox > h3.title{
+	display: flex;
+	align-items: center;
+	font-size: 0.3rem;
+	color: rgba(0,0,0,0.9);
+	position: relative;
+}
+
+.courseBox > h3.title > img{
+   width: 0.22rem;
+   height: 0.22rem;
+   margin-right: 0.05rem;
+}
+.courseBox > h3.title > a.courseMore{
+	position: absolute;
+	right: 0;
+	top: 0.1rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	background: url("../img/index/more.png") center/cover;
+}
+
+
+.listBox{
+	width: 100%;
+	height: auto;
+	padding: 0 0.24rem;
+}
+.listBox > .listItem{
+	width: 100%;
+	height: 1.82rem;
+	padding: 0.1rem 0;
+}
+.listBox > .listItem > a{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.listItem .listImg{
+	width: 2.18rem;
+	height: 1.6rem;
+
+}
+
+.listImg > img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.listItem  .listInfo{
+	flex-grow: 1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-left: 0.15rem;
+}
+.listInfo > .listInfoTop{
+	display: flex;
+	justify-content: space-between;
+
+}
+.listInfo > .listInfoTop > h3{
+	max-width: 3.5rem;
+	font-size: 0.28rem;
+	line-height: 1.5;
+	color: rgba(0,0,0,0.9);
+	font-weight: normal;
+	word-break:break-all;
+	display:-webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
+}
+.listInfo > .listInfoTop > span.listPrice{
+	line-height: 1.5;
+	font-size: 0.28rem;
+	color: rgba(0,0,0,0.9);
+}
+.listInfo > div.tagList{
+    display: flex;
+}
+div.tagList > button {
+	background: #4292F3;
+	color: #FFFFFF;
+	font-size: 0.2rem;
+	border: 0.01rem solid #3985e0;
+	padding: 0.03rem 0.12rem;
+	margin-right: 0.1rem;
+}
+div.tagList > button:nth-of-type(2){
+	background: #19B9F5;
+	border: 0.01rem solid #17a8df;
+}
+div.tagList> button:nth-of-type(3){
+	background: #69dcba;
+	border: 0.01rem solid #4ec470;
+}
+
+/* coursebox*/
