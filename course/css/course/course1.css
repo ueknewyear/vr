@@ -1,0 +1,222 @@
+body{
+	background: #e7e7e7;
+}
+header{
+	width: 100%;
+	height: 0.87rem;
+	background: #1e7df1;
+	padding:0.19rem 0 0 0.24rem;
+	box-sizing: border-box;
+}
+div.formGroup{
+	width: 7.02rem;
+	height: 0.5rem;
+	background: #1b6cce;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0 0.25rem;
+	box-sizing: border-box;
+}
+::-webkit-input-placeholder{
+	color: rgba(255,255,255,0.6);
+	font-size: 0.2rem;
+}
+div.formGroup > input{
+	float: left;
+	height: 0.3rem;
+	padding: 0;
+	background: none;
+	border: none;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 0;
+}
+.search{
+	width: 7.02rem;
+	height: 1.57rem;
+	background: #fff;
+	margin: 0.22rem auto;
+}
+.search ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.24rem 0 0 0.24rem;
+	box-sizing: border-box;
+}
+.search ul li{
+	width: 1.44rem;
+	height: 0.4rem;
+	background: #4292f3;
+	border:0.02rem solid #3985e0;
+	margin: 0 0.55rem 0.2rem 0;
+}
+.search ul li:nth-child(2),.search ul li:nth-child(5){
+	width: 2.26rem;
+}
+.search ul li:nth-child(3n){
+	margin-right: 0;
+}
+.search ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.26rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.4rem;
+}
+.search ul .hot{
+	background: #19b9f5;
+	border-color: #4292f3;
+	
+}
+.courseBox{
+    width: 100%;
+    height: auto;
+    padding: 0 0.24rem;
+    background: #fff;
+    margin-bottom: 0.25rem;
+}
+.courseBox > h3.title{
+    display: flex;
+    align-items: center;
+    font-size: 0.3rem;
+    color: rgba(0,0,0,0.9);
+    position: relative;
+    line-height: 0.87rem;
+}
+
+.courseBox > h3.title > img{
+    width: 0.22rem;
+    height: 0.22rem;
+    margin-right: 0.05rem;
+}
+.kaList{
+	width: 7.02rem;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.kaList li{
+	width: 3.4rem;
+	height: 1.92rem;
+	background: #1e7df1;
+	padding:0.16rem 0.24rem 0;
+	box-sizing: border-box;
+	margin-bottom: 0.22rem;
+}
+.kaList li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.kaList li a h3{
+	border-bottom: 0.01rem solid #4b97f4;
+	padding-bottom: 0.09rem;
+	font-size: 0.32rem;
+	color: #fff;
+}
+.kaList li a h4{
+	font-size: 0.24rem;
+	color: #e9f2fe;
+	line-height:0.47rem ;
+}
+.kaList li a h5{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.24rem;
+}
+.kaList li a span{
+	font-size: 0.32rem;
+	color: #fff;
+	line-height:0.48rem ;
+}
+.kaList li a p{
+	width: 0.93rem;
+	height: 0.37rem;
+	background: #fff;
+	font-size: 0.22rem;
+	color: #1e7df1;
+	line-height:0.37rem ;
+	text-align: center;
+}
+.listBox{
+    width: 100%;
+    height: auto;
+}
+.listBox > .listItem{
+    width: 100%;
+    height: 1.82rem;
+    padding: 0.1rem 0;
+}
+.listBox > .listItem > a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.listItem .listImg{
+    width: 2.18rem;
+    height: 1.6rem;
+
+}
+
+.listImg > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.listItem  .listInfo{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0.15rem;
+}
+.listInfo > .listInfoTop{
+    display: flex;
+    justify-content: space-between;
+
+}
+.listInfo > .listInfoTop > h3{
+    max-width: 3.5rem;
+    font-size: 0.28rem;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.9);
+    font-weight: normal;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+.listInfo > .listInfoTop > span.listPrice{
+    line-height: 1.5;
+    font-size: 0.28rem;
+    color: rgba(0,0,0,0.9);
+}
+.listInfo > div.tagList{
+    display: flex;
+}
+div.tagList > button {
+    background: #4292F3;
+    color: #FFFFFF;
+    font-size: 0.2rem;
+    border: 0.01rem solid #3985e0;
+    padding: 0.03rem 0.12rem;
+    margin-right: 0.1rem;
+}
+div.tagList > button:nth-of-type(2){
+    background: #19B9F5;
+    border: 0.01rem solid #17a8df;
+}
+div.tagList> button:nth-of-type(3){
+    background: #69dcba;
+    border: 0.01rem solid #4ec470;
+}
