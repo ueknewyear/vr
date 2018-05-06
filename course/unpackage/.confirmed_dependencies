@@ -1,7 +1,33 @@
 {
 	"index.html": {
 		"refer": [
-			"camera.html"
+			"camera.html",
+			"person.html"
+		],
+		"resources": []
+	},
+	"person.html": {
+		"refer": [
+			"personInfo.html",
+			"index.html"
+		],
+		"resources": [
+			"img/index/thumb.png",
+			"css/person/index.css",
+			"css/mui/mui.min.css"
 		]
+	},
+	"personInfo.html": {
+		"refer": [
+			"editName.html",
+			"person.html"
+		],
+		"resources": []
+	},
+	"editName.html": {
+		"refer": [
+			"personInfo.html"
+		],
+		"resources": []
 	}
 }

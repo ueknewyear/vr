@@ -1,0 +1,73 @@
+body{
+	background: #fff;
+}
+.top{
+	width:100%;
+	height:0.88rem;
+	background: #1e7df1;
+	color:#fff;
+	font-size: 0.3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.top a{
+	color: #fff;
+	font-size: 0.3rem;
+	position: absolute;
+	left:0.25rem;
+	
+}
+.listBox{
+	width:100%;
+
+	overflow: hidden;
+}
+.listBox li{
+	width:7.05rem;
+	height:1.17rem;
+	border-bottom: 1px solid #e5e5e5;
+	margin:0 auto;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.28rem;
+	color:#4c4c4c;
+	position: relative;
+
+}
+.listBox .right{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.listBox li.select{
+	width:0.15rem;
+	margin-bottom: 0;
+}
+.listBox li .mui-icon{
+	color: #b2b2b2;
+	font-size:0.2rem;
+}
+.listBox li:nth-child(1){
+	width:100%;
+	height:1.49rem;
+	border-bottom: none;
+	padding:0 0.24rem;
+}
+
+.listBox li img{
+	width:1.11rem;
+	height:1.14rem;
+	position: absolute;
+	top:0.19rem;
+	right:0.67rem;
+}
+.listBox .line{
+	width:100%;
+	height:0.1rem;
+	background: #e8f8fe;
+}

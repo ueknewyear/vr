@@ -6,39 +6,138 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<script src='js/rem.js'></script>
+	<script src='js/jquery-2.1.0.js'></script>
+	<script src="js/mui/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/person/index.js"></script>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="fonts/iconfont.css" />
 	<link rel="stylesheet" href="./css/mui/mui.min.css" />
 	<link rel="stylesheet" href="css/person/index.css" />
-	<script src="js/mui/mui.js" type="text/javascript" charset="utf-8"></script>
     <title>个人中心</title>
 </head>
 <body>
+	<!--顶部固定信息-->
 	<div class="top">
-		<a href="" class="logo"><img src="img/person/logo.png" alt="" /></a>
+		<a href="personInfo.html" class="logo"><img src="img/person/logo.png" alt="" /></a>
 		<div class="name">李小建</div>
 		<div class="school">山西农业大学</div>
-		<a href="" class="edits"><img src="img/person/edit.png" alt="" class="edit" /></a>
+		<a href="personInfo.html" class="edits"><img src="img/person/edit.png" alt="" class="edit" /></a>
 	</div>
+	<!--主体内容-->
 	<div class="main">
 		<div class="title">
 			<img src="img/person/star.png" alt="" />
 			<span>我的收藏</span>
 		</div>
-		<div class="content"></div>
+		<!--收藏列表-->
+		<ul class="listBox">
+        	<li class="listItem">
+                <a href="">
+                    <div class="listImg">
+                    	<img src="img/index/thumb.png" alt="">
+                    </div>
+                    <div class="listInfo">
+                        <div class="listInfoTop">
+                            <h3> 分析设计之构成基本知识构成基本知识...</h3>
+                            <!--<h3 class="listPrice">免费</h3>-->
+                        </div>
+                        <div class="tagList">
+                            <button>免费</button>
+                            <button>初级</button>
+                            <button>27课时</button>
+                        </div>
+                    </div>
+                </a>
+              <div class="iconfont icon-shoucang"></div>
+          	</li>
+
+            <li class="listItem">
+                <a href="">
+                    <div class="listImg">
+                    	<img src="img/index/thumb.png" alt="">
+                    </div>
+                    <div class="listInfo">
+                        <div class="listInfoTop">
+                            <h3> 分析设计之构成基本知识构成基本知识...</h3>
+                            <!--<h3 class="listPrice">免费</h3>-->
+                        </div>
+                        <div class="tagList">
+                            <button>免费</button>
+                            <button>初级</button>
+                            <button>27课时</button>
+                        </div>
+                    </div>
+                </a>
+              <div class="iconfont icon-shoucang"></div>
+          	</li>
+          	
+          	<li class="listItem">
+                <a href="">
+                    <div class="listImg">
+                    	<img src="img/index/thumb.png" alt="">
+                    </div>
+                    <div class="listInfo">
+                        <div class="listInfoTop">
+                            <h3> 分析设计之构成基本知识构成基本知识...</h3>
+                            <!--<h3 class="listPrice">免费</h3>-->
+                        </div>
+                        <div class="tagList">
+                            <button>免费</button>
+                            <button>初级</button>
+                            <button>27课时</button>
+                        </div>
+                    </div>
+                </a>
+              <div class="iconfont icon-shoucang"></div>
+          	</li>
+          	
+          	<li class="listItem">
+                <a href="">
+                    <div class="listImg">
+                    	<img src="img/index/thumb.png" alt="">
+                    </div>
+                    <div class="listInfo">
+                        <div class="listInfoTop">
+                            <h3> 分析设计之构成基本知识构成基本知识...</h3>
+                            <!--<h3 class="listPrice">免费</h3>-->
+                        </div>
+                        <div class="tagList">
+                            <button>免费</button>
+                            <button>初级</button>
+                            <button>27课时</button>
+                        </div>
+                    </div>
+                </a>
+              <div class="iconfont icon-shoucang"></div>
+          	</li>
+             
+        </ul>
 	</div>
+	<!--底部固定导航-->
 	<div class="footer">
-		<a href="" class="con">
-			<img src="img/person/index.png" alt="" />
-			<div class="text">首页</div>
+		<a href="index.html" class="con">
+			<span class="iconfont icon-weibiaoti1"></span>
+			<span class="text">首页</span>
 		</a>
 		<a href="" class="con">
-			<img src="img/person/course.png" alt="" />
-			<div class="text">课程</div>
+			<span class="iconfont  icon-kecheng"></span>
+			<span class="text">课程</span>
 		</a>
-		<a href="" class="con">
-			<img src="img/person/person.png" alt="" />
-			<div class="text">我的</div>
+		<a href="" class="con active">
+			<span class="iconfont  icon-geren2-copy "></span>
+			<span class="text">我的</span>
 		</a>
 	</div>
-  
+	<!--取消收藏弹出框-->
+	<div class="alert">
+		<div class="btn"><img src="img/person/close.png" alt="" /></div>
+		<h3>取消收藏</h3>
+	</div>
+<script>
+	$(".con").click(function(){
+		$(this).siblings().remove("active");
+		$(this).addClass("active");
+	})
+</script>
 </body>
 </html>
