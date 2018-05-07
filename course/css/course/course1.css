@@ -30,6 +30,7 @@ div.formGroup > input{
 	border: none;
 	color: rgba(255,255,255,0.6);
 	margin-bottom: 0;
+	font-size: 0.2rem;
 }
 .search{
 	width: 7.02rem;
@@ -124,6 +125,10 @@ div.formGroup > input{
 	font-size: 0.24rem;
 	color: #e9f2fe;
 	line-height:0.47rem ;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .kaList li a h5{
 	display: flex;

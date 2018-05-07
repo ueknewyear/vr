@@ -1,0 +1,154 @@
+body{
+	background: #f3f3f3;
+}
+.top{
+	width:100%;
+	height:4.22rem;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: #f3f3f3;
+	background-image: url("../../img/person/bgimage.png");
+	background-position: center;
+	background-size: 100%;
+	z-index: 10;
+}
+.top .logo{
+	display: block;
+	width:1.49rem;
+	height:1.53rem;
+	margin:0.38rem auto 0;
+}
+.top img{
+	display: block;
+	width:1.49rem;
+	height:1.53rem;
+}
+.top .name{
+	text-align: center;
+	color: #fff;
+	font-size: 0.3rem;
+	margin-top: 0.2rem;
+}
+.top .school{
+	text-align: center;
+	color: #fff;
+	font-size: 0.3rem;
+	margin-top: 0.2rem;
+	
+}
+.top .edits{
+	display: block;
+	width:0.58rem;
+	height:0.58rem;
+	margin:0.31rem auto 0;
+}
+.top .edit{
+	display: block;
+	width:0.58rem;
+	height:0.58rem;
+}
+main{
+	padding:0 0.24rem ;
+	margin-top: 4.22rem;
+	background: #f3f3f3;
+	overflow: hidden;
+}
+main .title{
+	width:6.92rem;
+	height: 1.16rem;
+	margin-left: 0.1rem;
+	border-bottom: 0.01rem solid #dadada;
+	position: fixed;
+	background: #f3f3f3;
+	z-index: 10;
+}
+.nav1{
+	width: 56%;
+	height: 100%;
+	display: flex;
+	padding: 0 0.1rem;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: flex-end;
+	right: 0;
+	z-index: 500;
+	margin: 0 auto;
+}
+.nav1 div{
+	font-size: 0.32rem;
+	font-weight: 600;
+	position: relative;
+	color: #000000b3;
+	line-height: 0.62rem;
+}
+.active{
+	color: rgba(30,125,241,0.9)!important;
+	border-bottom: 0.04rem solid #1e7df1;
+	
+}
+.brief{
+	width: 7.02rem;
+	height: auto;
+	overflow: hidden;
+	margin-top: 1.16rem;
+}
+.brief .listBox{
+	width: 7.02rem;
+	/*height: 3.07rem;*/
+	overflow: hidden;
+
+}
+.brief .listBox .line{
+	font-size: 0.2rem;
+	color: rgba(0,0,0,0.5);
+	margin-top: 0.35rem;
+	display: flex;
+	line-height: 0.34rem;
+}
+.brief .listBox .line .circle{
+	width: 0.2rem;
+	height: 0.2rem;
+	background: #f3f3f3;
+	border:0.01rem solid #b7b7b7;
+	border-radius: 50%;
+	margin: 0.06rem 0.2rem 0 0;
+}
+.brief .listBox .line .circle::before{
+	content: "";
+	display: block;
+	width: 0.12rem;
+	height: 0.12rem;
+	background: #b7b7b7;
+	border-radius: 50%;
+	margin:0.04rem auto;
+	
+}
+.brief .listBox .line .hot{
+	border:0.01rem solid #19b9f5;
+}
+.brief .listBox .line .hot::before{
+	background: #19b9f5;
+}
+.listBox h2{
+	font-size: 0.26rem;
+	color: rgba(0,0,0,0.7);
+	line-height: 0.37rem;
+	margin-left: 0.38rem;
+}
+.brief .con .listItem{
+    width: 6.62rem;
+    height: 1.91rem;
+    padding: 0.16rem;
+    box-sizing: border-box;
+    background: #fff;
+    margin: 0.12rem auto 0;
+}
+
+div.tagList > .cha {
+    background: #19b9f5;
+   
+    border: 0.02rem solid #17a8df;
+    
+    border-radius: 0;
+}
