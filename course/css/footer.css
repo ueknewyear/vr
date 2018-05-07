@@ -9,22 +9,24 @@
 	overflow: hidden;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+	z-index: 999;
 	
 }
 .footer .con{
-	display: block;
 	width:0.5rem;
 	height:1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
-.footer .con img{
-	width:0.5rem;
-	height: 0.44rem;
-<<<<<<< HEAD
-	margin-top: 0.13rem;
-=======
-	margin-top: 0.19rem;
->>>>>>> 88b1e95e3f2f5e6abc74c5ccac98da04acb11848
-	margin-bottom: 0.1rem;
+.footer .con .iconfont{
+	font-size: 0.4rem;
+	color: #b2b2b2;
+}
+.footer .con.active span{
+	color:#19b9f5;
 }
 .footer .con .text{
 	font-size: 0.2rem;
