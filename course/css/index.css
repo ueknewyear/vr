@@ -46,6 +46,7 @@ div.formGroup > input{
 	border: none;
 	color: rgba(255,255,255,0.6);
 	margin-bottom: 0;
+	font-size: 0.2rem;
 }
 
 /* header  */
@@ -68,6 +69,7 @@ div.formGroup > input{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-bottom: 0.1rem;
 	border-bottom: 0.01rem solid #d9fbfc;
 }
 .title >  h3{
@@ -89,10 +91,11 @@ div.formGroup > input{
     height: 100%;	
     display: flex;
 	justify-content: space-between;
+	padding-top: 0.05rem;
 }
 .courseImg{
 	width: 2.18rem;
-	height: 1.23rem;
+	height: 100%;
 }
 .courseImg > img{
 	width: 100%;
@@ -103,6 +106,10 @@ div.formGroup > input{
 	flex-grow: 1;
     height: 100%;
     padding-left: 0.24rem;
+    padding-top: 0.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .courseInfoBox h1{
     color:  #1E7DF1;
@@ -179,6 +186,7 @@ div.tag > button{
 	width: 100%;
 	height: 1.82rem;
 	padding: 0.1rem 0;
+	border-bottom: 0.01rem solid rgba(0,0,0,0.1);
 }
 .listBox > .listItem > a{
 	display: flex;
@@ -212,7 +220,7 @@ div.tag > button{
 
 }
 .listInfo > .listInfoTop > h3{
-	max-width: 3.5rem;
+	max-width: 3.3rem;
 	font-size: 0.28rem;
 	line-height: 1.5;
 	color: rgba(0,0,0,0.9);
@@ -249,3 +257,85 @@ div.tagList> button:nth-of-type(3){
 }
 
 /* coursebox*/
+
+.load{
+	width: 100%;
+	height: 0.9rem;
+	background: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+.dotBox {
+    width: 1.1rem;
+    height: 0.16rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.dotBox .dot {
+    width: 0.16rem;
+    height: 0.16rem;
+    border-radius: 50%;
+    background: #19b9f5;
+  }
+
+.dotBox .dot1 {
+    animation: change 1s 0.2s infinite alternate;
+  }
+
+.dotBox .dot2 {
+    animation: change 1s 0.4s infinite alternate;
+  }
+
+.dotBox .dot3 {
+    animation: change 1s 0.6s infinite alternate;
+  }
+  @keyframes change {
+    0% {
+      background: #19b9f5;
+    }
+    50% {
+      background: #378bf2;
+    }
+    100% {
+      background: #1e7df1;
+    }
+  }
+  
+  .alert{
+	width:4.7rem;
+	height: 3rem;
+	position: fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	background-image: url('../img/person/remove.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 20;
+	box-shadow: 0 0 8px 6rem rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.4); 
+	display: none;
+}
+.alert .btn{
+	width:0.76rem;
+	height:0.76rem;
+	position: absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+	top:0.14rem;
+}
+.alert h3{
+	margin-top: 1.46rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.32rem;
+}
+
+

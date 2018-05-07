@@ -9,7 +9,10 @@
 	<link rel="stylesheet" href="./css/mui/mui.min.css" />
     <link rel="stylesheet" href="./css/base.css">
 	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<script src="js/jquery-2.1.0.js"></script>
 	<script src="js/mui/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
     <title></title>
 </head>
 <body>
@@ -32,7 +35,7 @@
   	 <div class="presentCourse">
   	 	 <div class="title">
   	 	 	 <h3>
-  	 	 	 	当前课程 <img src="" alt="" />
+  	 	 	 	当前课程
   	 	 	 </h3>
   	 	 	 <span class="date"> 2018/2/20 星期五</span>
   	 	 </div>
@@ -200,16 +203,18 @@
       </ul>
       <!-- listBox-->
   </section>
+ 
+  <section style="width: 100%;height:0.22rem;background: #e8f8fe;"></section>
 
   <section class="courseBox">
       <h3 class="title">
           <img src="img/index/ar.png" alt=""> 特色课程
-          <a href="" class="courseMore">
+         <!-- <a href="" class="courseMore">
 
-          </a>
+          </a>-->
       </h3>
       <!-- title-->
-      <ul class="listBox">
+      <ul class="listBox listBoxs">
           <li class="listItem">
               <a href="">
                   <div class="listImg">
@@ -293,5 +298,35 @@
       <!-- listBox-->
   </section>
   
+  <div class="load">
+  	  <div class="dotBox">
+		      <div class="dot dot1"></div>
+		      <div class="dot dot2"></div>
+		      <div class="dot dot3"></div>
+		    </div>
+  </div>
+  
+  
+
+  <div class="footer">
+		<a href="index.html" class="con">
+			<img src="img/person/index.png" alt="" />
+			<div class="text">首页</div>
+		</a>
+		<a href="course1.html" class="con">
+			<img src="img/person/course.png" alt="" />
+			<div class="text">课程</div>
+		</a>
+		<a href="person.html" class="con">
+			<img src="img/person/person.png" alt="" />
+			<div class="text">我的</div>
+		</a>
+	</div>
+	
+	<!--取消收藏弹出框-->
+	<div class="alert">
+		<div class="btn"><img src="img/person/close.png" alt="" /></div>
+		<h3>没有更多数据了</h3>
+	</div>
 </body>
 </html>
