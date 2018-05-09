@@ -7,10 +7,11 @@ $(function(){
 //document.addEventListener('plusready',function(){
 document.addEventListener('DOMContentLoaded',function(){
 	let load = document.querySelector('.load');
-	
+	let camera = document.querySelector('.camera');
 	let ch = document.documentElement.clientHeight;
 	let listBoxs = document.querySelector('.listBoxs');
 	let flag = true , allPages = 0 , newPage = 0;
+	getData();
 	window.addEventListener('scroll',function(){
 		let loadTop = load.getBoundingClientRect().top;
 		if(loadTop < ch && flag){
@@ -19,32 +20,41 @@ document.addEventListener('DOMContentLoaded',function(){
 		}
 	});
 	
+	/*camera.addEventListener('touchend',function(){
+		
+		
+	},false)
+	*/
+	
 	function getData(){
-		mui.ajax('database/courselist.json',{
+		mui.ajax('http://localhost/vrdatabase/course.php',{
 			data:{
 				page:newPage
 			},
 			dataType:'json',
 			success:function(result){
-			
+			    console.log(result);
 				let str = '';
 				if(!allPages){
 					allPages = result.allPages;
 				}
 			
-				result.lists.slice(newPage*5,newPage*5+5).forEach(element=>{
+				result.lists.forEach(element=>{
 					str +=`
 					    <li class="listItem">
-              <a href="">
+              <a href="courseDetail.html?cid=${element.id}">
                   <div class="listImg">
-                      <img src=${element.thumb} alt="">
+                      <img src=${element['cover_img']} alt="">
                   </div>
                   <div class="listInfo">
                       <div class="listInfoTop">
-                          <h3> ${element.title}</h3>
-                          <h3 class="listPrice">${element.price}</h3>
+                          <h3> ${element['name']}</h3>
+                          
+                          <h3 class="listPrice">免费</h3>
                       </div>
-
+                      <div class="listDesc">
+                      	 ${element.about}
+                      </div>
                       <div class="tagList">
                           ${tagStr(element.tag)}
                       </div>
@@ -68,7 +78,7 @@ document.addEventListener('DOMContentLoaded',function(){
 		
 	}
 	
-	function tagStr(str){
+	function tagStr(str='免费,初级'){
 		let tagArr = str.trim().split(',');
 		let html = '';
 		tagArr.forEach(element=>{
@@ -76,5 +86,7 @@ document.addEventListener('DOMContentLoaded',function(){
 		})
 		return html;
 	}
+	
+	
 	 
 },false)

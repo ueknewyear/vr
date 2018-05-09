@@ -1,19 +1,34 @@
 document.addEventListener('plusready',function(){
-	var recBox = document.querySelector('.recBox');
+	var rec = document.querySelector('.recBox');
 	var recW = rec.offsetWidth , recH = rec.offsetHeight;
+	var img = document.querySelector('#img');
 	var canvas = document.querySelector('canvas');
-	canvas.width = recW+'px' , canvas.Height = recH+'px';
-	/*var cmr = plus.camera.getCamera();
+	var context = canvas.getContext('2d');
+    canvas.width = recW , canvas.height = recH;
+    var imgbase = canvas.toDataURL("image/jpeg");
+//  var video = document.querySelector('#video');
+	
+    var cmr = plus.camera.getCamera();
+
+    /*cmr.captureImage(function (p){
+        plus.io.resolveLocalFileSystemURL(p, function(entry){
+            img.src = entry.toLocalURL()  ;
+            img.onload = function(){
+            	context.drawImage(img,0,0);
+            	var imgbase1 = canvas.toDataURL("image/jpeg");
+            	console.log(imgbase1);
+            }
+        }, function(e){
+        	 console.log(e.message);
+        });
+    }, function(e){},{index:1,filename:"_doc/camera/"});*/
 	cmr.startVideoCapture(function(p){
-		outLine('成功：'+p);
 		plus.io.resolveLocalFileSystemURL(p, function(entry){
-			createItem(entry);
+		   console.log( entry );
 		}, function(e){
-			outLine('读取录像文件错误：'+e.message);
+			console.log(e.message);
 		} );
 	}, function(e){
 		outLine('失败：'+e.message);
-	}, {filename:'_doc/camera/',index:i});*/
-	
-	
+	}, {filename:'_doc/camera/',index:1});
 },false)

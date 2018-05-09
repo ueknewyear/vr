@@ -236,7 +236,7 @@ body{
 		font-size: 0.22rem;
 		color: rgba(0, 0, 0, 0.5);
 	}
-	.module:nth-last-child(2){
+	.module:nth-last-of-type(1){
 		padding-bottom: 1rem;
 	}
 /* 课程简介结束 */
