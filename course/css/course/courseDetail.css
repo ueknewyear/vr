@@ -4,7 +4,6 @@ body{
 .imgAbs,.imgAbs .imga{
 	width: 100%;
 	height: 3.73rem;
-	background: red;
 	display: block;
 	position: relative;
 }
