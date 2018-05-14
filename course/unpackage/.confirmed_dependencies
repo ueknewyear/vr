@@ -2,7 +2,8 @@
   "index.html": {
     "refer": [
       "camera.html",
-      "person.html"
+      "person.html",
+      "course1.html"
     ],
     "resources": []
   },
@@ -27,6 +28,27 @@
   "editName.html": {
     "refer": [
       "personInfo.html"
+    ],
+    "resources": []
+  },
+  "courseDetail.html": {
+    "refer": [
+      "details.html",
+      "course1.html"
+    ],
+    "resources": []
+  },
+  "course1.html": {
+    "refer": [
+      "courseDetail.html",
+      "index.html",
+      "courseList.html"
+    ],
+    "resources": []
+  },
+  "details.html": {
+    "refer": [
+      "courseDetail.html"
     ],
     "resources": []
   }

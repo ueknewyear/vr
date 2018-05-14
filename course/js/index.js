@@ -1,25 +1,24 @@
 $(function(){
     //取消收藏弹框
-	$(".btn").click(function(){
+	$(".alert").click(function(){
 		$(".alert").fadeOut();
 	})
-})
-//document.addEventListener('plusready',function(){
-document.addEventListener('DOMContentLoaded',function(){
-	let load = document.querySelector('.load');
-	let camera = document.querySelector('.camera');
-	let ch = document.documentElement.clientHeight;
-	let listBoxs = document.querySelector('.listBoxs');
-	let flag = true , allPages = 0 , newPage = 0;
-	getData();
-	window.addEventListener('scroll',function(){
+
+	var load = document.querySelector('.load');
+	var camera = document.querySelector('.camera');
+	var ch = document.documentElement.clientHeight;
+	var listBoxs = document.querySelector('.listBoxs');
+	var imgprefix = 'http://59.110.154.79:8080/ssm/resourse/uploadCourseCoverImage/';
+	var flag = true , allPages = 0 , newPage = 0;
+	
+	$(window).on('scroll',function(){
 		let loadTop = load.getBoundingClientRect().top;
 		if(loadTop < ch && flag){
 		    flag = false;
 		    getData()
 		}
 	});
-	
+	$(window).triggerHandler('scroll');
 	/*camera.addEventListener('touchend',function(){
 		
 		
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded',function(){
 	*/
 	
 	function getData(){
-		mui.ajax('http://localhost/vrdatabase/course.php',{
+		mui.ajax('/vrdatabase/course.php',{
 			data:{
 				page:newPage
 			},
@@ -44,7 +43,7 @@ document.addEventListener('DOMContentLoaded',function(){
 					    <li class="listItem">
               <a href="courseDetail.html?cid=${element.id}">
                   <div class="listImg">
-                      <img src=${element['cover_img']} alt="">
+                      <img src=${imgprefix+element['cover_image']} alt="">
                   </div>
                   <div class="listInfo">
                       <div class="listInfoTop">
@@ -89,4 +88,4 @@ document.addEventListener('DOMContentLoaded',function(){
 	
 	
 	 
-},false)
+})

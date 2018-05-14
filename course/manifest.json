@@ -142,7 +142,8 @@
 				"resources": [],
 				"refer": [
 					"camera.html",
-					"person.html"
+					"person.html",
+					"course1.html"
 				],
 				"priority": 0
 			},
@@ -170,6 +171,30 @@
 				"resources": [],
 				"refer": [
 					"personInfo.html"
+				],
+				"priority": 0
+			},
+			"courseDetail.html": {
+				"resources": [],
+				"refer": [
+					"details.html",
+					"course1.html"
+				],
+				"priority": 0
+			},
+			"course1.html": {
+				"resources": [],
+				"refer": [
+					"courseDetail.html",
+					"index.html",
+					"courseList.html"
+				],
+				"priority": 0
+			},
+			"details.html": {
+				"resources": [],
+				"refer": [
+					"courseDetail.html"
 				],
 				"priority": 0
 			}
