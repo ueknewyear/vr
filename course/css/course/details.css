@@ -203,25 +203,31 @@
 }
 /* 详情导读开始 */
 	.guidread{
-		height: 2.43rem;
 		width: 100%;
+		padding-bottom: 0.24rem;
 	}
 	.guid_title{
 		color: rgba(30,125,241,0.85);
 		font-size: 0.28rem;
 		font-weight: 600;
 		margin-bottom: 0.1rem;
+		
 	}
 	.guidread > p{
 		line-height: 0.38rem;
 		font-size: 0.24rem;
 		color: rgba(0, 0, 0, 0.7);
+		overflow : hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
 	}
 /* 详情导读结束 */
 
 /* 课程须知开始 */
 	.issue{
-		height: 3.4rem;	
+		padding-bottom: 0.22rem;
 	}
 	.issue .list:first-of-type{
 		margin-top: 0;
@@ -230,7 +236,7 @@
 		float: left;
 	}
 	.issue .list{
-		margin-top: 0.3rem;
+		margin-top: 0.22rem;
 	}
 	.issue .radius{
 		margin: 0.18rem 0 0 0.2rem !important;
@@ -313,54 +319,18 @@
 		font-size: 0.28rem;
 		color: rgba(0, 0, 0, 0.9);
 	}
-	.about_list{
-		clear: both;
-		position: relative;
-		display: block;
-		height: 1.58rem;
-		margin-bottom: 0.25rem;
-	}
-	.about_list img{
-		width: 35%;
-		height: 100%;
-		float: left;
-		margin-right: 0.2rem;
-	}
-	.about_list > .title{
-		float: left;
-		width: 45%;
-		font-size: 0.26rem;
-		color: rgba(0, 0, 0, 0.9);
-		font-weight: 600;
-		text-overflow:ellipsis;
-		white-space: nowrap;
+	.about main{
+		height: auto;
 		overflow: hidden;
 	}
-	.tab1,.tab2{
-		padding:0 0.17rem;
-		height: 0.3rem;
-		border: 1px solid #17a8df;
-		background: #19b9f5;
-		color: #fff;
-		font-size: 0.24rem;
-		text-align: center;
-		line-height: 0.3rem;
-		margin-right: 0.15rem;
-		float: left;
+	.listBox{
+		padding:0;
 	}
-	.tabs{
-		position: absolute;
-		top: 1.2rem;
-		left: 38%;
-		width: 60%;
+	.listItem .listImg{
+		margin-top: 0.14rem;
 	}
-	.about_list .tab2{
-		background: #69dc8a;
-		border: 1px solid #4ec470;
-	}
-	.num{
-		float: right;
-		font-size: 0.22rem;
-		color: rgba(0, 0, 0, 0.7);
+	.listItem .listInfo{
+	
+		/*padding-bottom: 0.6rem;*/
 	}
 /* 相关课程结束 */
