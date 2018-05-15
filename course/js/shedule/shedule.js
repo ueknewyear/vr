@@ -7,7 +7,7 @@ $(function(){
         $(this).siblings().removeClass('active').end().addClass('active');
     })
    
-
+    var colorarr = ['#69dc8a','#e8c669','#19b9f5'];
     var box=$(".box .swiper-wrapper");
     var day=['周一','周二','周三','周四','周五','周六','周日'];
     for(var i=0;i<7;i++){
@@ -49,19 +49,14 @@ $(function(){
     	var arr = value.son;
     	$.each(arr, function(index,v) {
     		var str = `#t${v.x}-${v.y}`;
+    		var color =colorarr[Math.floor( Math.random()*colorarr.length)];
     	    $(str).html();
-    		$(str).css('background',randonColor()).html(function(i,v){
+    		$(str).css('background',color).html(function(i,v){
     			return v+value.cname;
     		});
     	});
     }
     
-    function  randonColor(){
-    	var str = `rgb(`;
-    		for(var i=0;i<3;i++){
-    			str +=Math.round(Math.random()*120) +',';
-    		}
-    		return str.slice(0,-1)+')';
-    }
+   
     
 })

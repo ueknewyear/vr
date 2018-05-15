@@ -131,9 +131,22 @@
 	overflow:hidden;
 }
 .listInfo > .listInfoTop > span.listPrice{
-	line-height: 1.5;
-	font-size: 0.28rem;
-	color: rgba(0,0,0,0.9);
+    line-height: 1.5;
+    font-size: 0.28rem;
+    color: rgba(0,0,0,0.9);
+}
+
+.listInfo > .listDesc{
+	max-width: 3.3rem;
+	font-size: 0.2em;
+	line-height: 1.2;
+	color: rgba(0,0,0,0.7);
+	font-weight: normal;
+	word-break:break-all;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
 }
 .listInfo > div.tagList{
     display: flex;
@@ -148,8 +161,9 @@
 	z-index: 5;
 	color: #19b9f5;
 	font-size: 0.3rem;
-	/*background: blue;*/
-
+}
+.listBox .iconfont.active{
+	color: #ebebeb;
 }
 div.tagList > button {
 	background: #4292F3;

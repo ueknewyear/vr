@@ -60,26 +60,7 @@ body{
 	padding:0 0.24rem;
 	background: #fff;
 }
-/* 初级知识开始 */
-.guidread{
-	height: 2.43rem;
-	width: 100%;
-	padding-top: 0.3rem;
-	border-bottom:0.01rem solid #e5e5e5;
-	box-sizing: border-box;
-}
-.guid_title{
-	color: rgba(30,125,241,0.85);
-	font-size: 0.28rem;
-	font-weight: 600;
-	margin-bottom: 0.1rem;
-}
-.guidread > p{
-	line-height: 0.38rem;
-	font-size: 0.24rem;
-	color: rgba(0, 0, 0, 0.7);
-}
-/* 初级知识结束 */
+
 /* 头像开始 */
 	.himg{
 		box-sizing: border-box;

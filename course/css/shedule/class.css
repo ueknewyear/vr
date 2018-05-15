@@ -101,5 +101,9 @@ header .back {
     border-bottom:1px dotted #ccc;
     box-sizing: border-box;
     text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #ffffff;
+    padding: 0.1rem;
 }
 
