@@ -3,14 +3,16 @@
     "refer": [
       "camera.html",
       "person.html",
-      "course1.html"
+      "course1.html",
+      "schedule.html"
     ],
     "resources": []
   },
   "person.html": {
     "refer": [
       "personInfo.html",
-      "index.html"
+      "index.html",
+      "course1.html"
     ],
     "resources": [
       "img/index/thumb.png",
@@ -52,5 +54,10 @@
       "courseDetail.html"
     ],
     "resources": []
+  },
+  "schedule.html": {
+    "refer": [
+      "index.html"
+    ]
   }
 }
