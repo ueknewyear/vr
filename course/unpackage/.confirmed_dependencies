@@ -42,7 +42,8 @@
     "refer": [
       "courseDetail.html",
       "index.html",
-      "courseList.html"
+      "courseList.html",
+      "person.html"
     ],
     "resources": []
   },
