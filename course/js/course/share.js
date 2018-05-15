@@ -14,7 +14,7 @@
 			});
 		});
 		 //分享链接点击事件
-		 console.log(document.getElementById("share"));
+
 		document.getElementById("share").addEventListener('tap', function() {
 			var ids = [{
 					id: "weixin",

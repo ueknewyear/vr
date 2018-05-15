@@ -35,14 +35,14 @@ body{
 	display: flex;
 	justify-content: space-between;
 }
-.imgIcon .icon-star{
+.imgIcon a{
 	width:0.52rem;
 	height: 0.52rem;
 	background: #1e7df1;
 	border-radius: 50%;
     display: block;
 }
-.imgIcon .icon-star span{
+.imgIcon a i{
 	display: block;
 	color: #d6d6d6;
 	font-size: 18px;

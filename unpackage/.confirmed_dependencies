@@ -1,1 +1,35 @@
-null
+{
+  "course/index.html": {
+    "refer": [
+      "course/person.html",
+      "course/course1.html"
+    ],
+    "resources": []
+  },
+  "course/person.html": {
+    "refer": [
+      "course/course1.html",
+      "course/index.html"
+    ],
+    "resources": []
+  },
+  "course/course1.html": {
+    "refer": [
+      "course/courseList.html",
+      "course/courseDetail.html",
+      "course/index.html"
+    ],
+    "resources": []
+  },
+  "course/courseList.html": {
+    "refer": [
+      "course/courseDetail.html"
+    ],
+    "resources": []
+  },
+  "course/courseDetail.html": {
+    "refer": [
+      "course/course1.html"
+    ]
+  }
+}
