@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "camera.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -143,7 +143,8 @@
 				"refer": [
 					"camera.html",
 					"person.html",
-					"course1.html"
+					"course1.html",
+					"schedule.html"
 				],
 				"priority": 0
 			},
@@ -155,7 +156,8 @@
 				],
 				"refer": [
 					"personInfo.html",
-					"index.html"
+					"index.html",
+					"course1.html"
 				],
 				"priority": 0
 			},
@@ -187,7 +189,8 @@
 				"refer": [
 					"courseDetail.html",
 					"index.html",
-					"courseList.html"
+					"courseList.html",
+					"person.html"
 				],
 				"priority": 0
 			},
@@ -195,6 +198,13 @@
 				"resources": [],
 				"refer": [
 					"courseDetail.html"
+				],
+				"priority": 0
+			},
+			"schedule.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
 				],
 				"priority": 0
 			}
