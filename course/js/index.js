@@ -4,26 +4,63 @@ $(function(){
 		$(".alert").fadeOut();
 	})
 
-	var load = document.querySelector('.load');
-	var camera = document.querySelector('.camera');
+	var load = $('.load')[0];
+	var camera = $('.camera');
 	var ch = document.documentElement.clientHeight;
-	var listBoxs = document.querySelector('.listBoxs');
+	var listBoxs =$('.listBoxs');
+	var baseBox = $('.baseBox');
 	var imgprefix = 'http://59.110.154.79:8080/ssm/resourse/uploadCourseCoverImage/';
 	var flag = true , allPages = 0 , newPage = 0;
 	
 	$(window).on('scroll',function(){
-		let loadTop = load.getBoundingClientRect().top;
+		var loadTop = load.getBoundingClientRect().top;
 		if(loadTop < ch && flag){
 		    flag = false;
 		    getData()
 		}
 	});
 	$(window).triggerHandler('scroll');
-	/*camera.addEventListener('touchend',function(){
-		
-		
-	},false)
-	*/
+	
+	$.ajax({
+		url:'/vrdatabase/coursofCategory.php',
+		data:{caid:1},
+		dataType:'json',
+		success:function(result){
+			baseBox.html('');
+			console.log(typeof result)
+			var str = '';
+		 result.slice(0,3).forEach(element=>{
+					str +=`
+					    <li class="listItem">
+              <a href="courseDetail.html?cid=${element.id}">
+                  <div class="listImg">
+                      <img src=${imgprefix+element['cover_image']} alt="">
+                  </div>
+                  <div class="listInfo">
+                      <div class="listInfoTop">
+                          <h3> ${element['name']}</h3>
+                          
+                          <h3 class="listPrice">免费</h3>
+                      </div>
+                      <div class="listDesc">
+                      	 ${element.about}
+                      </div>
+                      <div class="tagList">
+                          ${tagStr(element.tag)}
+                      </div>
+                  </div>
+              </a>
+          </li>
+					`;
+				})
+				
+				baseBox.html(function(index,value){
+					return value+str;
+				})
+		}
+	})
+	
+	
 	
 	function getData(){
 		mui.ajax('/vrdatabase/course.php',{
@@ -32,8 +69,7 @@ $(function(){
 			},
 			dataType:'json',
 			success:function(result){
-			    console.log(result);
-				let str = '';
+				var str = '';
 				if(!allPages){
 					allPages = result.allPages;
 				}
@@ -62,13 +98,16 @@ $(function(){
           </li>
 					`;
 				})
-				listBoxs.innerHTML += str;
+				
+				listBoxs.html(function(index,value){
+					return value+str;
+				})
                 newPage++;
                 if(newPage < allPages){
                 	flag = true;
                 }else{
                 	flag = false;
-                	let load = document.querySelector('.load');
+                	var load = $('.load')[0];
                 	load.style.display = 'none';
                 	$(".alert").fadeIn();
                 }
@@ -78,8 +117,8 @@ $(function(){
 	}
 	
 	function tagStr(str='免费,初级'){
-		let tagArr = str.trim().split(',');
-		let html = '';
+		var tagArr = str.trim().split(',');
+		var html = '';
 		tagArr.forEach(element=>{
 			html+=`<button>${element}</button>`
 		})
