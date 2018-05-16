@@ -120,6 +120,9 @@ div.formGroup > input{
 	padding-bottom: 0.09rem;
 	font-size: 0.32rem;
 	color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .kaList li a h4{
 	font-size: 0.24rem;

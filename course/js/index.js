@@ -27,7 +27,6 @@ $(function(){
 		dataType:'json',
 		success:function(result){
 			baseBox.html('');
-			console.log(typeof result)
 			var str = '';
 		 result.slice(0,3).forEach(element=>{
 					str +=`
@@ -43,7 +42,7 @@ $(function(){
                           <h3 class="listPrice">免费</h3>
                       </div>
                       <div class="listDesc">
-                      	 ${element.about}
+                      	 主讲人: ${element.tname}
                       </div>
                       <div class="tagList">
                           ${tagStr(element.tag)}
