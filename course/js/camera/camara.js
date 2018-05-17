@@ -1,3 +1,4 @@
+            
 $(function(){
 	　var rec = $('.recBox');
 	var recW = rec.innerWidth() , recH = rec.innerHeight();
@@ -16,11 +17,17 @@ $(function(){
 	  video.srcObject = mediaStream;
 	  video.onloadedmetadata = function(e) {
 	    video.play();
-	    setInterval(function(){
 	    	context.drawImage(video, 0, 0, recW, recH);
-	    	var data = canvas[0].toDataURL();
-	    },60)
+	    	var data = canvas[0].toDataURL('image/png',0.1);
+	    		url:'/vrdatabase/face.php',
+	    		data:{face:data},
+	    		type:'post',
+	    	   	success:function(data){
+	    	   		
+	    	   	}
+	    	})
 	    
+	      
 	  };
 	})
 	.catch(function(err) { console.log(err.name + ": " + err.message); }); // 总是在最后检查错误
@@ -53,10 +60,11 @@ $(function(){
             //alert('Succeed to get media!');  
             video.src = window.URL.createObjectURL(stream);
             video.play();
-            context.drawImage(video, 0, 0, recW, recH);
+           let data=  context.drawImage(video, 0, 0, recW, recH);
+           console.log(canvas.toDataURL('image/png',0.5)); 
         }  
         //视频获取失败
         function errorFunc(e) {  
             alert('Error！'+e);  
-        }   */  
+        }   */ 
 })
