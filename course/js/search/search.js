@@ -25,6 +25,13 @@ $(function(){
 			}
 		})
 	
+	    $('.cons').on('click','.tab',function(){
+	    	console.log(1);
+	    	let val = $(this).text().trim();
+	    	getSearch(val);
+	    })
+	
+	
 	    function getSearch(val){
 	    	$.ajax({
 				type:"get",

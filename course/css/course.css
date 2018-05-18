@@ -74,17 +74,17 @@
     font-size: 0.28rem;
     line-height: 1.5;
     color: rgba(0,0,0,0.9);
-    font-weight: normal;
+    font-weight: bold;
     word-break:break-all;
     display:-webkit-box;
     -webkit-line-clamp:1;
     -webkit-box-orient:vertical;
     overflow:hidden;
 }
-.listInfo > .listInfoTop > span.listPrice{
-    line-height: 1.5;
-    font-size: 0.28rem;
-    color: rgba(0,0,0,0.9);
+.listInfo > .listInfoTop >.listPrice{
+    line-height: 2.5;
+    font-size: 0.2rem;
+    color: rgba(0,0,0,0.4);
 }
 
 .listInfo > .listDesc{

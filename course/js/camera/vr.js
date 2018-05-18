@@ -18,13 +18,16 @@ $(function(){
 	  video.onloadedmetadata = function(e) {
 	    video.play();
 	    	context.drawImage(video, 0, 0, recW, recH);
-	    	var data = canvas[0].toDataURL('image/png',0.1);
+	    	var data = canvas[0].toDataURL('image/png',0.1).slice(22);
+	    
 	    		$.ajax({
-	    		url:'/vrdatabase/face.php',
-	    		data:{face:data},
+	    		url:'/vrdatabase/vr.php',
+	    		data:{
+	    			face:data
+	    		},
 	    		type:'post',
 	    	   	success:function(data){
-	    	   		
+	    	   		console.log(data)
 	    	   	}
 	    	})
 	    

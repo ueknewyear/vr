@@ -52,6 +52,7 @@ div.formGroup > input{
 	background: #4292f3;
 	border:0.02rem solid #3985e0;
 	margin: 0 0.55rem 0.2rem 0;
+	overflow: hidden;
 }
 .search ul li:nth-child(2),.search ul li:nth-child(5){
 	width: 2.26rem;
@@ -118,14 +119,14 @@ div.formGroup > input{
 .kaList li a h3{
 	border-bottom: 0.01rem solid #4b97f4;
 	padding-bottom: 0.09rem;
-	font-size: 0.32rem;
+	font-size: 0.28rem;
 	color: #fff;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 .kaList li a h4{
-	font-size: 0.24rem;
+	font-size: 0.2rem;
 	color: #e9f2fe;
 	line-height:0.47rem ;
 	width: 100%;

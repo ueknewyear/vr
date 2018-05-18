@@ -180,7 +180,7 @@ div.tag > button{
 .listBox{
 	width: 100%;
 	height: auto;
-	padding: 0 0.24rem;
+	/*padding: 0 0.24rem;*/
 }
 .listBox > .listItem{
 	width: 100%;
@@ -231,10 +231,10 @@ div.tag > button{
 	-webkit-box-orient:vertical;
 	overflow:hidden;
 }
-.listInfo > .listInfoTop > span.listPrice{
+.listInfo > .listInfoTop > .listPrice{
 	line-height: 1.5;
-	font-size: 0.28rem;
-	color: rgba(0,0,0,0.9);
+	font-size: 0.2rem;
+	color: rgba(0,0,0,0.4);
 }
 .listInfo > .listDesc{
 	max-width: 3.3rem;

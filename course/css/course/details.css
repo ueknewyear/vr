@@ -213,7 +213,7 @@
 	.guidread > p{
 		line-height: 0.38rem;
 		font-size: 0.24rem;
-		color: rgba(0, 0, 0, 0.7);
+		color: rgba(0, 0, 0, 0.6);
 		overflow : hidden;
 		text-overflow: ellipsis;
 		display: -webkit-box;
